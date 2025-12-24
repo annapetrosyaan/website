@@ -1,25 +1,10 @@
-const menuIcon = document.getElementById('menu-icon');
-const headerNav = document.getElementById('header-nav');
+const menuIcon = document.getElementById('mobile-menu-icon');
+const mobileNav = document.getElementById('mobile-nav');
 
-function toggleMenu() {
-  if(headerNav.style.display === 'block'){
-    headerNav.style.display = 'none';
+menuIcon.addEventListener('click', () => {
+  if (mobileNav.style.display === 'flex') {
+    mobileNav.style.display = 'none';
   } else {
-    headerNav.style.display = 'block';
+    mobileNav.style.display = 'flex';
   }
-}
-
-menuIcon.addEventListener('click', toggleMenu);
-
-function handleResize() {
-  if(window.innerWidth <= 768){
-    headerNav.style.display = 'none';
-    menuIcon.style.display = 'block';
-  } else {
-    headerNav.style.display = 'flex';
-    menuIcon.style.display = 'none';
-  }
-}
-
-window.addEventListener('resize', handleResize);
-window.addEventListener('load', handleResize);
+});

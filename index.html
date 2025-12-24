@@ -49,7 +49,7 @@
       font-weight: 500;
     }
 
-    /* Mobile Header/Menu */
+    /* Mobile Header/Menu (JS will create dynamically) */
     .mobile-header, .mobile-nav {
       display: none;
     }
@@ -137,16 +137,6 @@
       text-align: center;
       opacity: 0.8;
     }
-
-    /* Mobile adjustments */
-    @media (max-width: 768px){
-      .desktop-header, .desktop-nav {
-        display: none;
-      }
-      .mobile-header {
-        display: flex;
-      }
-    }
   </style>
 </head>
 <body>
@@ -179,23 +169,8 @@
     <a href="#licenses">Licenses</a>
     <a href="#contact">Contact</a>
   </nav>
+  <script src="menu.js"></script>
 
-  <!-- Mobile Header -->
-  <div class="mobile-header">
-    <strong>Էլեկտրո Գրուպ</strong>
-    <div id="mobile-menu-icon">&#9776;</div>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-nav" id="mobile-nav">
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#products">Products</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#licenses">Licenses</a>
-  </div>
-
-<script src="menu.js"></script>
 <!-- ===== HERO ===== -->
 <div class="hero" style="text-align: center; padding: 80px 0; background-color: #000;">
   <img 

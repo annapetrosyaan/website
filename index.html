@@ -129,22 +129,31 @@
   </style>
 </head>
 <body>
-  
+
 <header>
   <!-- Desktop header -->
   <div class="desktop-header" style="display:flex; justify-content:space-between; align-items:center; padding:20px 40px; background:#020617;">
     <strong style="font-size:1.5rem; color:#e5e7eb;">Էլեկտրո Գրուպ</strong>
     <div class="contact-info" style="display:flex; align-items:center;">
+      <!-- Email icon -->
       <span style="font-size:1.1rem; display:flex; align-items:center; margin-left:20px;">
-        &#9993; info@electro-group.am
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right:5px;">
+          <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 5.089-8-5.089V6h16zM4 18V8.489l7.555 4.815c.262.167.567.167.829 0L20 8.489V18H4z"/>
+        </svg>
+        info@electro-group.am
       </span>
+
+      <!-- Phone icon -->
       <span style="font-size:1.1rem; display:flex; align-items:center; margin-left:20px;">
-        &#128222; +374 98 321 222
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right:5px;">
+          <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.12-.74-.03-1.01.24l-2.2 2.2c-3.3-1.7-5.98-4.38-7.67-7.67l2.2-2.2c.27-.27.36-.66.24-1.01C8.7 6.95 8.5 5.75 8.5 4.5 8.5 4.22 8.28 4 8 4H4C3.45 4 3 4.45 3 5c0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-4.01c0-.28-.22-.5-.5-.5z"/>
+        </svg>
+        +374 98 321 222
       </span>
     </div>
   </div>
 
-  <!-- Desktop navigation -->
+  <!-- Desktop nav links -->
   <nav class="desktop-nav" style="display:flex; justify-content:center; background:#020617; padding:10px 0;">
     <a href="#about" style="margin:0 15px; color:#e5e7eb;">About</a>
     <a href="#services" style="margin:0 15px; color:#e5e7eb;">Services</a>
@@ -154,10 +163,9 @@
     <a href="#contact" style="margin:0 15px; color:#e5e7eb;">Contact</a>
   </nav>
 
-  <!-- Mobile header: two icons only -->
-  <div class="mobile-header" style="display:none; justify-content:space-between; padding:10px 20px; background:#020617;">
-    <!-- Contact icon -->
-    <div id="contact-icon" style="cursor:pointer; font-size:1.5rem; color:#e5e7eb;">&#9993;</div>
+  <!-- Mobile header: only company name + menu icon -->
+  <div class="mobile-header" style="display:none; justify-content:space-between; align-items:center; padding:10px 20px; background:#020617;">
+    <strong style="font-size:1.5rem; color:#e5e7eb;">Էլեկտրո Գրուպ</strong>
     <!-- Menu icon -->
     <div id="mobile-menu-icon" style="cursor:pointer; font-size:1.5rem; color:#e5e7eb;">&#9776;</div>
   </div>
@@ -173,7 +181,7 @@
 </header>
 
 <style>
-/* Hide mobile header on desktop, hide desktop nav/header on mobile */
+/* Show desktop, hide mobile on wide screens */
 @media (max-width:768px){
   .desktop-header, .desktop-nav {
     display: none;

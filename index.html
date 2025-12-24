@@ -3,51 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <title>Electro Group</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CHANGE DESCRIPTION HERE -->
+  <meta name="description" content="Electro Group – Electrical & lighting solutions">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #0f172a;
       color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
     }
 
-    .container {
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 100px 20px;
       text-align: center;
-      max-width: 600px;
-      padding: 20px;
+      background: linear-gradient(135deg, #020617, #0f172a);
     }
 
-    h1 {
+    .hero h1 {
       font-size: 3rem;
       margin-bottom: 10px;
     }
 
-    p {
+    .hero p {
       font-size: 1.2rem;
       opacity: 0.9;
     }
 
-    .badge {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 8px 16px;
-      border-radius: 999px;
-      background: #22c55e;
-      color: #022c22;
-      font-weight: bold;
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #020617;
+      padding: 30px;
+      text-align: center;
+      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Electro Group</h1>
-    <p>More coming soon.</p>
-    <div class="badge">🚀 </div>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <nav>
+    <!-- CHANGE COMPANY NAME HERE -->
+    <strong>Electro Group</strong>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Products</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <!-- CHANGE MAIN TITLE HERE -->
+  <h1>Electro Group</h1>
+
+  <!-- CHANGE TAGLINE HERE -->
+  <p>Electrical & lighting solutions</p>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <h2>About Us</h2>
+
+  <!-- CHANGE ABOUT TEXT HERE -->
+  <p>
+    Electro Group provides professional electrical, lighting, and technical
+    solutions for residential, commercial, and industrial projects.
+    We focus on quality, reliability, and modern technology.
+  </p>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <!-- CHANGE SERVICE TEXTS HERE -->
+    <div class="card">Electrical installations</div>
+    <div class="card">Lighting systems</div>
+    <div class="card">Maintenance & support</div>
+    <div class="card">Custom solutions</div>
   </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <h2>Products</h2>
+
+  <div class="grid">
+    <!-- CHANGE PRODUCT NAMES HERE -->
+    <div class="card">LED Lighting</div>
+    <div class="card">Electrical Components</div>
+    <div class="card">Smart Systems</div>
+  </div>
+</section>
+
+<!-- ===== PORTFOLIO ===== -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+
+  <!-- CHANGE PORTFOLIO DESCRIPTION HERE -->
+  <p>
+    Selected projects and installations completed by our team.
+    (Images and details coming soon.)
+  </p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <!-- CHANGE CONTACT INFO HERE -->
+  <p>Email: info@electro-group.am</p>
+  <p>Phone: +374 XX XXX XXX</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <!-- CHANGE FOOTER TEXT HERE -->
+  © 2025 Electro Group. All rights reserved.
+</footer>
+
 </body>
 </html>

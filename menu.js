@@ -14,12 +14,12 @@ if (window.innerWidth <= 768) {
   mobileNav.className = 'mobile-nav';
   mobileNav.id = 'mobile-nav';
   mobileNav.innerHTML = `
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#products">Products</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#licenses">Licenses</a>
-    <a href="#contact">Contacts</a>
+    <a href="#about">Մեր մասին</a>
+    <a href="#services">Ծառայություններ</a>
+    <a href="#products">Պրոդուկտներ</a>
+    <a href="#licenses">Լիցենզիաներ</a>
+    <a href="#contact">Կապ</a>
+
   `;
   document.body.insertBefore(mobileNav, mobileHeader.nextSibling);
 

@@ -18,7 +18,7 @@ if (window.innerWidth <= 768) {
     <a href="#services">Ծառայություններ</a>
     <a href="#products">Պրոդուկտներ</a>
     <a href="#licenses">Լիցենզիաներ</a>
-    <a href="#contact">Կապ</a>
+    <a href="#contact">Կապ մեզ հետ</a>
 
   `;
   document.body.insertBefore(mobileNav, mobileHeader.nextSibling);

@@ -19,7 +19,6 @@ if (window.innerWidth <= 768) {
     <a href="#products">Պրոդուկտներ</a>
     <a href="#licenses">Լիցենզիաներ</a>
     <a href="#contact">Կապ մեզ հետ</a>
-
   `;
   document.body.insertBefore(mobileNav, mobileHeader.nextSibling);
 
@@ -28,5 +27,13 @@ if (window.innerWidth <= 768) {
   menuIcon.addEventListener('click', () => {
     mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
     mobileNav.style.flexDirection = 'column';
+  });
+
+  // ✅ Close menu when a link is clicked
+  const links = mobileNav.querySelectorAll('a');
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileNav.style.display = 'none';
+    });
   });
 }

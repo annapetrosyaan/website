@@ -19,6 +19,7 @@ if (window.innerWidth <= 768) {
     <a href="#products">Products</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#licenses">Licenses</a>
+    <a href="#contact">Contacts</a>
   `;
   document.body.insertBefore(mobileNav, mobileHeader.nextSibling);
 

@@ -16,7 +16,7 @@ if (window.innerWidth <= 768) {
   mobileNav.innerHTML = `
     <a href="#about">Մեր մասին</a>
     <a href="#services">Ծառայություններ</a>
-    <a href="#products">Պրոդուկտներ</a>
+    <a href="#products">Աշխատանքներ</a>
     <a href="#licenses">Լիցենզիաներ</a>
     <a href="#contact">Կապ մեզ հետ</a>
   `;

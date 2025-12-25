@@ -222,6 +222,33 @@
   position: relative;
   z-index: 1;
 }
+.card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay for readability */
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.card h3, .card a {
+  position: relative;
+  z-index: 1;
+}
 
   </style>
 </head>
@@ -293,12 +320,13 @@
 <section id="products">
   <h2>Աշխատանքներ</h2>
   <div class="grid">
-    <div class="card">LED Lighting</div>
-    <div class="card">Electrical Components</div>
-    <div class="card">Smart Systems</div>
+    <div class="card" style="background: url('images/products/school1.png') center/cover no-repeat; color: #fff;">
+      <h3>Դպրոցի էլ.սնուցման և էլ մատակարարման նախագիծ</h3>
+      <a href="images/products/Քռասնի դպրոց.pdf" target="_blank">Դիտել PDF</a>
+    </div>
   </div>
 </section>
-  
+
 <section id="licenses">
   <h2>Լիցենզիաներ</h2>
   <p>

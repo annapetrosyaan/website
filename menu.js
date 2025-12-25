@@ -4,7 +4,7 @@ if (window.innerWidth <= 768) {
   const mobileHeader = document.createElement('div');
   mobileHeader.className = 'mobile-header';
   mobileHeader.innerHTML = `
-    <strong>Էլեկտրո Գրուպ</strong>
+    <strong>Electro Group</strong>
     <div id="mobile-menu-icon">&#9776;</div>
   `;
   document.body.insertBefore(mobileHeader, document.body.firstChild);

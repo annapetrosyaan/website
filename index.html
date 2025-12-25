@@ -148,11 +148,25 @@
       padding-top: 60px; /* match height of mobile header */
     }
   }
+    /* Increase paragraph font size for desktop */
+  @media (min-width: 769px) {
+    section p {
+     font-size: 1.2rem; /* adjust as needed */
+    }
+
+  .hero p {
+    font-size: 1.7rem; /* make hero text bigger too if needed */
+  }
+}
+
     /* Fix anchor alignment for mobile fixed header */
     @media (max-width: 768px) {
     section {
-      scroll-margin-top: 70px; /* height of mobile header */
+      scroll-margin-top: 60px; /* height of mobile header */
     }
+  }
+    html {
+      scroll-behavior: smooth;
   }
   </style>
 </head>

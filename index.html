@@ -195,6 +195,34 @@
     font-size: 1.5rem; /* adjust as needed */
     }
   }
+    .card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.card h3, .card a {
+  position: relative;
+  z-index: 1;
+}
+
   </style>
 </head>
 <body>
@@ -270,27 +298,27 @@
     <div class="card">Smart Systems</div>
   </div>
 </section>
-
+  
 <section id="licenses">
   <h2>Լիցենզիաներ</h2>
-
   <p>
     Մեր ընկերությունը ունի բոլոր անհրաժեշտ լիցենզիաները և թույլտվությունները
     մասնագիտական էլեկտրամոնտաժային աշխատանքներ իրականացնելու համար։
   </p>
 
   <div class="grid">
-    <div class="card">
+    <div class="card" style="background: url('images/licenses/UG74-9219-3DEE-8ABF_page-0001.jpg') center/cover no-repeat; color: #fff;">
       <h3>ՔԱՂԱՔԱՇԻՆԱԿԱՆ ՓԱՍՏԱԹՂԹԵՐԻ ԿԱԶՄՈՒՄ</h3>
       <a href="images/licenses/License1.pdf" target="_blank">Դիտել PDF</a>
     </div>
 
-    <div class="card">
+    <div class="card" style="background: url('images/licenses/UG3D-2ED4-658F-D83E_page-0001.jpg') center/cover no-repeat; color: #fff;">
       <h3>ԷԼԵԿՏՐԱՄԱՏԱԿԱՐԱՐՈՒՄ</h3>
       <a href="images/licenses/License2.pdf" target="_blank">Դիտել PDF</a>
     </div>
   </div>
 </section>
+
 
 <!-- ===== CONTACT ===== -->
 <section id="contact">

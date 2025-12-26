@@ -307,8 +307,22 @@
 }
 
 #services {
-  padding-top: 10px;
+  padding-top: 5px;
 }
+    @media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-grid .card:nth-child(5) {
+    grid-column: 2;
+  }
+
+  .services-grid .card:nth-child(6) {
+    grid-column: 3;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -363,29 +377,40 @@
   </p>
 </section>
 
+
 <!-- ===== SERVICES ===== -->
 <section id="services">
   <h2>Ծառայություններ</h2>
 
-  <div class="grid">
-    <!-- Service 1: Electrical installations -->
-    <div class="card" style="background: url('images/services/Elektroinstalacije.webp') center/cover no-repeat; color: #fff;">
+  <div class="grid services-grid">
+    <!-- Service 1 -->
+    <div class="card" style="background: url('images/services/Elektroinstalacije.webp') center/cover no-repeat;">
       <span>Էլեկտրասնուցման և էլեկտրամատակարարման ննփ</span>
     </div>
 
-    <!-- Service 2: Lighting systems -->
-    <div class="card" style="background: url('images/services/technical_main.jpg') center/cover no-repeat; color: #fff;">
+    <!-- Service 2 -->
+    <div class="card" style="background: url('images/services/technical_main.jpg') center/cover no-repeat;">
       <span>Կոմերցիոն տարածքների և բնակելի տների էլեկտրական ննփ</span>
     </div>
 
-    <!-- Service 3: Technical maintenance -->
-    <div class="card" style="background: url('images/services/maintenancelarge.jpg') center/cover no-repeat; color: #fff;">
+    <!-- Service 3 -->
+    <div class="card" style="background: url('images/services/maintenancelarge.jpg') center/cover no-repeat;">
       <span>Արտադրամասերի, շենք/շինությունների էլեկտրական ննփ</span>
     </div>
 
-    <!-- Service 4: Custom solutions -->
-    <div class="card" style="background: url('images/services/s_it_maintenance_and_support.jpg') center/cover no-repeat; color: #fff;">
+    <!-- Service 4 -->
+    <div class="card" style="background: url('images/services/s_it_maintenance_and_support.jpg') center/cover no-repeat;">
       <span>Ֆոտովոլտային կայանների ննփ</span>
+    </div>
+
+    <!-- Service 5 (bottom left, centered) -->
+    <div class="card" style="background: url('images/services/industrial.jpg') center/cover no-repeat;">
+      <span>Արտաքին լուսավորության ննփ</span>
+    </div>
+
+    <!-- Service 6 (bottom right, centered) -->
+    <div class="card" style="background: url('images/services/energy.jpg') center/cover no-repeat;">
+      <span>Ենթակայանների և օդային գծերի ննփ</span>
     </div>
   </div>
 </section>

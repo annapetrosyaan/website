@@ -331,6 +331,30 @@
     font-weight: 500;
   }
 }
+/* SERVICES GRID */
+#services .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* FORCE EQUAL CARD HEIGHTS */
+#services .card {
+  height: 260px;              /* 👈 same height for all */
+  display: flex;
+  align-items: flex-end;
+}
+
+/* TEXT BAR — SAME HEIGHT EVERYWHERE */
+#services .card span {
+  min-height: 72px;           /* 👈 equal text area height */
+  display: flex;
+  align-items: center;
+}
+#services .card span {
+  text-align: center;
+  justify-content: center;
+}
 
   </style>
 </head>

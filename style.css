@@ -346,3 +346,27 @@ body {
   text-align: center;
   justify-content: center;
 }
+/* MOBILE STACKING FOR SERVICES */
+@media (max-width: 1023px) {
+  /* Make the grid auto-fit to single column */
+  #services .grid {
+    grid-template-columns: 1fr !important; /* single column */
+  }
+
+  /* Reset any custom positioning for 5th/6th cards */
+  .services-grid .card:nth-child(5),
+  .services-grid .card:nth-child(6) {
+    grid-column: auto !important;
+  }
+
+  /* Optional: adjust card height on mobile if needed */
+  #services .card {
+    height: auto; /* let text define height */
+  }
+
+  #services .card span {
+    min-height: auto; /* remove fixed height for text bar */
+    padding: 12px 18px;
+    font-size: 1.2rem;
+  }
+}
